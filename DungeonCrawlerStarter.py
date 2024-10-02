@@ -20,7 +20,6 @@ playerMap = [
 plyrInventory=[]
 plyrFloor = 0
 plyrRoom = 0
-previousRoom = -1
 
 #create game loop
 gameRunning=True
@@ -80,7 +79,9 @@ while gameRunning:
 
         #grab item
         #check if there is an item in the room to grab
-        #make sure there isn't a monster in the way
+        if 'item' in roomContents:
+            #make sure there isn't a monster in the way
+            if not 'monster' in roomContents
         #add item to inventory
         #remove item from room
 
